@@ -315,7 +315,7 @@ void setup() {
   Wire.begin();
   // Is it a power-on reset?
   if (MCUSR & 1) {
-    Wave = 0; Freq = 100;     // Start with 100Hz Triangle
+    Wave = 0; Freq = 100;     // Start with 100Hz Sine
     CalculateSine();
     InitDisplay();
     ClearDisplay();
